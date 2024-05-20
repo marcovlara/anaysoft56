@@ -121,3 +121,16 @@ A ClientLib will consist of the following files and directories:
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+
+## Code ran to create this project
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
+ -D archetypeArtifactId=aem-project-archetype \
+ -D archetypeVersion=49\
+ -D appTitle="AnaySoft 5.6" \
+ -D appId="anaysoft56" \
+ -D groupId="com.anaysoft" \
+ -D aemVersion="6.5.19"
+ -D singleCountry=n \
+ -D includeExamples=y \
+ -D includeErrorHandler=y 
