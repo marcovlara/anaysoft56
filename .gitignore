@@ -1,0 +1,16 @@
+
+all/target
+core/target
+dispatcher/target
+it.tests/target
+ui.apps/target
+ui.apps.structure/target
+ui.config/target
+ui.frontend/target
+ui.content/target
+ui.frontend/dist
+ui.frontend/node
+ui.frontend/node_modules
+ui.tests/target
+ui.tests/test-module
+*.project
