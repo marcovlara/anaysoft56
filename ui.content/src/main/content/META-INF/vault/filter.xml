@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/anaysoft56" mode="merge"/>
+    <filter root="/content/anaysoft56" mode="merge"/>
+    <filter root="/content/dam/anaysoft56" mode="merge">
+        <exclude pattern="/content/dam/anaysoft56(/.*)?"/>
+        <include pattern="/content/dam/anaysoft56/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/anaysoft56/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/anaysoft56" mode="merge"/>
+</workspaceFilter>
