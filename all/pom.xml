@@ -94,6 +94,35 @@
                             <type>zip</type>
                             <target>/apps/anaysoft56-vendor-packages/application/install</target>
                         </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.extensions.amp.content</artifactId>
+                            <type>zip</type>
+                            <target>/apps/anaysoft56-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.extensions.amp</artifactId>
+                            <target>/apps/anaysoft56-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.examples.ui.config</artifactId>
+                            <type>zip</type>
+                            <target>/apps/anaysoft56-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+                            <type>zip</type>
+                            <target>/apps/anaysoft56-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.examples.ui.content</artifactId>
+                            <type>zip</type>
+                            <target>/apps/anaysoft56-vendor-packages/content/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -210,6 +239,30 @@
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.config</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.extensions.amp.content</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.extensions.amp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.config</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.content</artifactId>
             <type>zip</type>
         </dependency>
     </dependencies>
