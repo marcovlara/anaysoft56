@@ -3,6 +3,7 @@
     <filter root="/apps/anaysoft56/clientlibs"/>
     <filter root="/apps/anaysoft56/components"/>
     <filter root="/apps/anaysoft56/i18n"/>
+    <filter root="/apps/anaysoft56/actool"/>
     <filter root="/apps/sling" />
     <filter root="/apps/msm/anaysoft56_blueprint" mode="merge"/>
 </workspaceFilter>

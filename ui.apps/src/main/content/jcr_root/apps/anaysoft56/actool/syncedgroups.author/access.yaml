@@ -1,0 +1,177 @@
+- group_config:
+
+    - anaysoft-limited-access:
+
+       - name: 
+         isMemberOf: 
+         path: /home/groups/anaysoft
+         
+    - anaysoft-publishers:
+
+       - name: 
+         isMemberOf: publishers,anaysoft-limited-access
+         path: /home/groups/anaysoft
+
+    - anaysoft-reviewers:
+
+       - name: 
+         isMemberOf: reviewers,anaysoft-limited-access
+         path: /home/groups/anaysoft
+
+
+    - anaysoft-authors:
+
+       - name: 
+         isMemberOf: authors,projects-administrators,anaysoft-limited-access
+         path: /home/groups/anaysoft
+
+    - anaysoft-delete-assets:
+
+       - name: 
+         isMemberOf: delete-assets,anaysoft-limited-access
+         path: /home/groups/anaysoft
+
+         
+- ace_config:
+
+    - anaysoft-limited-access:
+       - path: /content/dam/we-retail
+         permission: deny
+         privileges: jcr:all
+         
+       - path: /content/dam/we-retail-screens
+         permission: deny
+         privileges: jcr:all
+         
+       - path: /content/dam/anaysoft56
+         permission: deny
+         privileges: jcr:all
+         
+       - path: /content/dam/core-components-examples
+         permission: deny
+         privileges: jcr:all
+         
+       - path: /content/dam/wknd-events
+         permission: deny
+         privileges: jcr:all
+
+       - path: /content/dam/templates
+         permission: deny
+         privileges: jcr:all
+
+# Added to support Generation
+       - path: /content/dam/fmdita-outputs
+         permission: allow
+         privileges: jcr:versionManagement,rep:write,jcr:lockManagement
+
+#added to support projects management
+       - path: /content/dam/projects/translation_output
+         permission: allow
+         privileges: jcr:all
+
+# added to remove menu items
+       - path: /libs/cq/core/content/nav/communities
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/personalization
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/forms
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/screens
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/commerce
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/general
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/workflow
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/sites
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/assets
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/resources
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/deployment
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/security
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/cloudservices
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/communities
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/commerce
+         permission: deny
+         privileges: jcr:all
+
+       - path: /libs/cq/core/content/nav/tools/operations
+         permission: deny
+         privileges: jcr:all
+         
+    - anaysoft-publishers:
+
+       - path: /content/dam/anaysoft56
+         permission: allow
+         privileges: jcr:read,rep:write
+         
+    - anaysoft-reviewers:
+         
+       - path: /content/dam/anaysoft56
+         permission: allow
+         privileges: jcr:read,rep:write
+         
+    - anaysoft-authors:
+         
+       - path: /content/dam/anaysoft56
+         permission: allow
+         privileges: jcr:read,rep:write,jcr:versionManagement,jcr:lockManagement
+         
+- user_config:
+
+  - anaysoft-publisher:
+    - name: "AnaySoft XML Dita Publisher"
+      isMemberOf: anaysoft-publishers
+      password: "new4you"
+      path: /home/users/anaysoft
+      profileContent: <jcr:root jcr:primaryType="nt:unstructured" email="publisher@example.com"/>
+
+  - anaysoft-reviewer:
+    - name: "AnaySoft XML Dita Reviewer"
+      isMemberOf: anaysoft-reviewers
+      password: "new4you"
+      path: /home/users/anaysoft
+      profileContent: <jcr:root jcr:primaryType="nt:unstructured" email="reviewer@example.com"/>
+
+  - anaysoft-author:
+    - name: "AnaySoft XML Dita Author"
+      isMemberOf: anaysoft-authors
+      password: "new4you"
+      path: /home/users/anaysoft
+      profileContent: <jcr:root jcr:primaryType="nt:unstructured" email="author@example.com"/>
+      
